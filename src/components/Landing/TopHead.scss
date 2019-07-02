@@ -1,0 +1,58 @@
+.performance-item {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    box-sizing: border-box;
+}
+.top-section{
+    position: relative;
+    overflow: hidden;
+}
+.top-content {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 9% ;
+    h1 {
+        margin: 0 0 13px 0 ;
+        font-family: Helvetica,Arial,sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 38px;
+    }
+    h2 {
+        margin: 0;
+        font-family: Helvetica,Arial,sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 38px;
+    }
+}
+
+.top-buttons {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .top-button {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        clear: both;
+        justify-content: flex-start;
+
+    }
+}

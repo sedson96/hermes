@@ -1,0 +1,36 @@
+.featured-container {
+    // overflow-y: scroll;
+    margin: 10px 0;
+}
+.featured {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    // padding: 20px
+}
+.featured-item {
+    // border: 1px solid red;
+    width: 660px;
+    height: 505px;
+    // overflow: hidden;
+    text-align: center;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    span {
+        position: relative;
+        bottom: 40px;
+        font-weight: 600;
+        padding: 3px;
+        text-decoration: underline;
+        width: 100%;
+    }
+    span:hover {
+        position: relative;
+        bottom: 40px;
+        color: white;
+        background: black; 
+    }
+}
