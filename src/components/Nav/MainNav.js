@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 import "./MainNav.scss"
 import logo from "../../images/icon-adidas-logo-white.svg"
 
@@ -6,7 +7,7 @@ function MainNav (props) {
     return(
         <main className="main-outter">
         <header className="main-nav-bar">
-                <img className="logo" src={logo} />
+                <Link to="/" ><img className="logo" src={logo} /></Link>
                 <nav className="main-nav-right">
                     <div><a>MEN</a></div>
                     <div><a>WOMEN</a></div>

@@ -1,21 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
+import {BrowserRouter} from "react-router-dom"
+import "./reset.css"
 import './App.css';
-import Uppernav from './components/Nav/Uppernav';
-import MainNav from './components/Nav/MainNav';
-import TopHead from './components/Landing/TopHead';
-import LandingCategories from './components/Landing/LandingCategories';
-import LandingFeatured from './components/Landing/LandingFeatured';
+import routes from "./routes"
 
 function App() {
   return (
-    <>
-      <Uppernav/>
-      <MainNav/>
-      <TopHead/>
-      <LandingCategories/>
-      <LandingFeatured/>
-    </>
+    <BrowserRouter>
+      {routes}
+    </BrowserRouter>
   );
 }
 

@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 import Person from "@material-ui/icons/PersonOutline"
 import "./Uppernav.scss"
 
@@ -14,7 +15,7 @@ function Uppernav (props) {
                     <a><strong>NEWSLETTER SIGNUP</strong></a>
                     <a>CREATORS CLUB</a>
                     <div className="menu-spacer"></div>
-                    <a>LOG IN </a>
+                    <Link className="a" to="/Login">LOG IN</Link>
                     <Person />
                 </nav>
             </header>

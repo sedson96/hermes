@@ -18,7 +18,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+input:focus {
+  outline: none;
+}
 .App-link {
   color: #61dafb;
 }
@@ -30,4 +32,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  font-family: 'Lato',Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  line-height: 22px;
 }

@@ -7,7 +7,12 @@ let test = async (request,response) => {
     response.json(answer)
 
 }
+ 
+let test2 = async (request, response) => {
+    response.redirect("edson-silva.com")
+}
 
 module.exports = {
-    test
+    test,
+    test2
 }

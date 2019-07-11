@@ -2,7 +2,7 @@ require("dotenv").config()
 const express = require("express")
 const massive = require("massive")
 
-const {test} = require("./controllers/authController")
+const {test,test2} = require("./controllers/authController")
 
 const app = express()
 
@@ -14,6 +14,7 @@ massive(CONNECTION_STRING).then(dbInstance => {
 })
 
 app.post("/api/insert", test)
+app.get("/api/test", test2)
 
 
 app.listen(SERVER_PORT, () => {

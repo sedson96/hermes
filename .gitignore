@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 .env
-
+/src/images/IcoMoon-Free-master
 # testing
 /coverage
 
