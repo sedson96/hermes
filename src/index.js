@@ -7,14 +7,16 @@ import { RestLink } from 'apollo-link-rest';
 import App from './App'; 
 import * as serviceWorker from './serviceWorker';
 import {ApolloProvider} from "react-apollo"
+require("dotenv").config();
 
+const {API_KEY, API_HOST} = process.env
 
 
 const restLink = new RestLink({
     uri: "https://apidojo-adidas-v1.p.rapidapi.com/",
     headers: 	{
-                    "x-rapidapi-host": "apidojo-adidas-v1.p.rapidapi.com",
-                    "x-rapidapi-key": "b0a636e1f8msh8d5a00822758ae3p17b2cajsn3324020351be"
+                    "x-rapidapi-host": API_HOST,
+                    "x-rapidapi-key": API_KEY
                 }
 
 })
