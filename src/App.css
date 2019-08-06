@@ -21,6 +21,9 @@
 input:focus {
   outline: none;
 }
+button:focus {
+  outline: none
+}
 .App-link {
   color: #61dafb;
 }

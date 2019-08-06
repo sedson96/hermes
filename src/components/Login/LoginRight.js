@@ -11,10 +11,10 @@ function LoginRight(props) {
             <br/>
             <label>You can also log in with one of these accounts</label>
             {/* <div className="buttons" > */}
-                <button>GOOGLE</button>
-                <button>YAHOO</button>
-                <button>FACEBOOK</button>
-                <button>RUNTASTIC</button>
+                <button className="facebook-button">FACEBOOK</button>
+                <button className="google-button">GOOGLE</button>
+                <button className="runtastic-button">RUNTASTIC</button>
+                <button className="yahoo-button">YAHOO</button>
             {/* </div> */}
         </div>
     )

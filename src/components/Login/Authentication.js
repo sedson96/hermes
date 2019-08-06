@@ -5,7 +5,7 @@ function Authentication(props) {
         <div className="auth">
             <div className="login-input"> <input placeholder="EMAIL ADDRESS" required/></div>
             <div className="login-input"> <input placeholder="PASSWORD" required/></div>
-            <div>    
+            <div className="remember-me">    
                 <input type="checkbox" className="check-input" /> 
                 <label>Remember Me</label>
             </div>
@@ -14,7 +14,7 @@ function Authentication(props) {
             <br />
             We have new terms and conditions. By clicking Log In, you agree to 
             the adidas Creators Club <span>Terms &#38; Conditions</span></p>
-            <button>LOG IN</button>
+            <button className="login-button">LOG IN</button>
         </div>
 
     )

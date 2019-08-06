@@ -8,22 +8,27 @@ import "./MainNav.scss"
 function Navbar (props) {
     let [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset)
     let [visible, setVisible] = useState(true)
-
+    
     useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll)
-        }  
-    },[]) 
-    
-    console.log(prevScrollpos)
-    
-    let handleScroll = () => {
-        const currentScrollPos = window.pageYOffset - 1;
-        const visible = prevScrollpos > currentScrollPos;
-            setVisible(visible)
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            let vis = prevScrollpos > currentScrollPos
+            setVisible(vis)
             setPrevScrollpos(currentScrollPos)
-    }
+
+        return window.removeEventListener("onscroll", () => console.log("left"))
+            }
+    },[prevScrollpos]) 
+    
+    // console.log(prevScrollpos)
+    
+    // let handleScroll = () => {
+    //     console.log("hit")
+    //     var currentScrollPos = window.pageYOffset;
+    //     let vis = prevScrollpos > currentScrollPos
+    //     setVisible(vis)
+    //     setPrevScrollpos(currentScrollPos)
+    // }
     return (
         <>
             <nav className={classnames("navs", { "navs-gone": !visible })}>

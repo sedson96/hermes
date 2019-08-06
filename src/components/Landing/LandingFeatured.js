@@ -7,12 +7,12 @@ function LandingFeatured (props) {
             <div className="featured">
                 <article className="featured-item">
                     <div>
-                        <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/DON_Teaser_2X_M_T_2_tcm221-377893.jpg"/>
+                        <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/DON_Teaser_2X_M_T_2_tcm221-377893.jpg" alt="Shoes"/>
                     </div>
                 </article>
                 <article className="featured-item">
                     <div>
-                        <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/HP_Supercourt_Teaser_960x480_tcm221-377306.jpg"/>
+                        <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/HP_Supercourt_Teaser_960x480_tcm221-377306.jpg" alt="Shoes"/>
                     </div>
                 </article>
             </div>

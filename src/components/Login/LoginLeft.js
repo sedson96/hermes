@@ -5,6 +5,7 @@ function LoginLeft(props) {
     return (
         <div className="login-left-side" >
             <h1>REGISTER AND JOIN THE ADIDAS CREATORS CLUB</h1>
+            <div className="register-list-container">
             <h5>Create an account with adidas</h5>
             <ul>
                 <li>Earn easy points for exclusive rewards</li>
@@ -16,6 +17,7 @@ function LoginLeft(props) {
                 <li>Access your complete order history</li>
                 <li>Track your order delivery</li>
             </ul>
+            </div>
             <button>REGISTER NOW</button>
 
         </div>

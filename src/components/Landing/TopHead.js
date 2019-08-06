@@ -12,7 +12,7 @@ function TopHead (props) {
                     <img id="tcm:221-366310" src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/running-fw19-pb-tease-clp-mh-medium-d_tcm221-366304.jpg" alt="pic" className="performance-item" data-inject_ssr_performance_instrument="" data-di-id="#tcm:221-366310"/>
                 </picture>
             </div>
-                <aside className="top-content">
+                 <aside className="top-content">
                     <h1>PULSEBOOST HD LTD</h1>
                     <h2>Any surface. Any Direction. Boost HD.</h2>
                     <div className="top-buttons">

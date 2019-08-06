@@ -5,8 +5,10 @@ import Footer from "../Footer/Footer"
 import LoginRight from "./LoginRight";
 import "./Login.scss"
 import LoginLeft from "./LoginLeft";
+import SignupBanner from "../banners/SignupBanner";
 
-function LoginMain() {
+function LoginMain(props) {
+    console.log(props)
     return (
         <>
         <Uppernav/>
@@ -20,6 +22,7 @@ function LoginMain() {
                 <LoginLeft/>
             </div>
         </div>
+        <SignupBanner/>
         <Footer />
         </>
     )

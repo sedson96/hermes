@@ -10,7 +10,7 @@
     height: 80px
 }
 .navs-gone {
-    top: -150px
+    top: -98px
 }
 
 .main-outter {
@@ -29,6 +29,7 @@
     padding: 0 16px;
     width: 100%;
 }
+
 .main-nav-right {
     color: white;
     display: flex;
@@ -42,11 +43,16 @@
     color: #fff;
     div {
         margin-top: 3px;
-        a{
-            margin: 0 3px
+        h4{
+            margin: 0 3px;
+            // cursor: pointer;
         }
     }
     
+}
+.links{
+    background: #fff;
+    color: black;
 }
 .menu-spacer-2 {
     display: inline-block;
@@ -61,7 +67,7 @@
     width: 70px;
     position: relative;
     margin: 0 20px 0 0;
-    bottom: 15px
+    bottom: 15px;
 }
 .search {
     height: 48px;

@@ -1,3 +1,13 @@
+@mixin others-button($color) {
+    border: none;
+    height: 48px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    background: $color;
+}
+
 .login-container{
     display: flex;
     justify-content: center;
@@ -22,12 +32,19 @@
     flex-direction: column;
     width: 370px;
     padding-right: 100px;
+    .remember-me{
+        display: flex;
+        align-items: center;
+    }
+    label {
+        font-size: 14px 
+
+    }
     h1 {
         margin-top: 20px;
         margin-bottom: 12px;
         font-size: 32px;
         font-weight: 900;
-        font: bolder;
     }
     h5 {
         font-size: 14px;
@@ -35,6 +52,9 @@
     }
     h5:hover {
         text-decoration: underline;
+    }
+    p {
+        font-size: 14px 
     }
 }
     .login-input {
@@ -53,23 +73,91 @@
         height: 24px;
         width: 24px;
     }
-.login-left-side {
-    display: flex;
-    flex-direction: column;
-    width: 370px;
-    padding-left: 100px;
-    margin-left: 10px; 
-    h1 {
-        font-size: 32px;
-        font-weight: 900;
+    .login-button {
+        border: none;
+        height: 48px;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        background: #0086CD;
     }
-}
-.auth{
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    justify-content: space-evenly;
-
-
-
-}
+    .login-button:hover {
+        background: #025F8E;
+    }
+    .auth{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        justify-content: space-evenly;
+    }
+    .google-button {
+        @include others-button(#e74847);
+    }
+    .google-button:hover {
+        background: #EC7070
+    }
+    .yahoo-button {
+        @include others-button(#2d1451);
+    }
+    .yahoo-button:hover {
+        background: #5D4C77
+    }
+    .facebook-button {
+        @include others-button(#4267b2)
+    }
+    .facebook-button:hover {
+        background: #6C87C2
+    }
+    .runtastic-button {
+        @include others-button(#007aff)
+    }
+    .runtastic-button:hover {
+        background: #3C96FE
+    }
+    .login-left-side {
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        padding-left: 100px;
+        margin-left: 10px; 
+        h1 {
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 35px;
+            margin-top: 10px;
+            margin-bottom: 12px; 
+        }
+        ul li:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content:"\2713\0020";
+            color: limegreen;
+            margin-right: 5px; 
+        }
+        li {
+            position: relative;
+            font-size: 14px;
+            margin: 0 0 10px 0;
+            padding-left: 15px;
+        }
+        button {
+            @include others-button(black);
+            margin-top: 25px;
+        }
+        .register-list-container {
+            // height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 260px;
+                margin-top: 35px;
+            }
+        }
+    }
+    
+    
